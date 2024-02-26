@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Software Didactico</title>
+</head>
+<body>
+    <div class="container">
+        <div class="info-box">
+            
+                <button class="quitarEstilos">
+                    <a href="./index.html">Volver</a>
+                </button>
+            
+            <h2>Como jugar el juego <i class="fa-solid fa-gamepad"></i></h2>
+            <p>¡Bienvenidos al juego de matemáticas para niños! Para comenzar, elige una operación matemática que quieras practicar (suma, resta, multiplicación o división). Se le darán opciones múltiples para responder. El juego te proporcionará retroalimentación y te ayudará a aprender de tus errores. ¡Diviértete y aprende!</p>
+        </div>
+        <div class="game-board">
+            <h1>Matematicas para niños! <i class="fa-solid fa-spaghetti-monster-flying"></i></h1>
+            <div class="operation-buttons">
+                <button class="add" onclick="startGame('add')"><i class="fas fa-plus"></i><br>Suma</button>
+                <button class="subtract" onclick="startGame('subtract')"><i class="fas fa-minus"></i><br>Resta</button>
+                <button class="multiply" onclick="startGame('multiply')"><i class="fas fa-times"></i><br>Multiplication</button>
+                <button class="divide" onclick="startGame('divide')"><i class="fas fa-divide"></i><br>Division</button>
+            </div>
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="score-board">
+                <p>Tu puntuacion: <span id="score">0</span></p>
+            </div>
+            <div class="message" id="message"></div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <button class="restart-button" onclick="restartGame()">Reiniciar Juego</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Creado por<span class="heart">❤️</span><a href="https://github.com/Chech3" target="_blank">Johana Medina, Gabriel Perdomo, Cinthya Alvarez</a></p>
+    </footer>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>

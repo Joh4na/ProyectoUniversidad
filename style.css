@@ -1,0 +1,59 @@
+body {
+  background-color: #ffd700;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.footer {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+  display: inline;
+}
+
+.footer .heart {
+  color: #f44336;
+  animation: heartbeat 1.2s infinite;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #4caf50;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #2e7d32;
+}
